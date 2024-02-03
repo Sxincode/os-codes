@@ -1,0 +1,54 @@
+INTRODUCTION TO UNIX COMMANDS-
+
+1. ls :-> use to list out directories
+    Example : ls -l
+2. grep :-> use to find pattern in some file or line
+    Example: ls -l  | grep "doc"
+3. cp  :->
+    Example: cp Src_file Dest_file
+            cp a.txt b.txt
+4. cat  :->
+        1. To view content of file
+            cat filname 
+            cat abc.txt
+        2. To view content of multiple file
+            cat file_name1 file_name2
+        3.  To view Contents of a File preceding with Line Numbers
+            cat -n file_name
+        4. To Create a file and add content in Linux
+            cat > newfile_name
+            This is a readme file.
+            This is a new line.
+        5.  to Copy the Contents of One File to Another File
+            cat file1.txt file2.txt > merged_file.txt 
+            This command combines the content of file1.txt and file2.txt into a new file named merged_file.txt.
+        6. to Append the Contents of One File to the End of Another File
+            cat file_name1 >> file_name2
+        7. to Display Content in Reverse Order Using `tac` Command 
+            tac file_name
+5. mkdir
+    - Use to create Directory
+    mkdir dir_name
+6. rmdir
+    - Use to remove Directory
+    rmdir dir_name
+7. cd 
+    - Change Directory
+    cd dir_name
+8. mv
+    - Use to rename Directory
+    mv old_dir new_dir
+9. touch
+    - Use to create an empty file
+    touch File1_name File2_name File3_name 
+10 chmod
+    - Use to modify the permission to grant or restrict permission to directories or files
+    Example:
+        Method 1: Symbolic mode
+            chmod u+rwx [file_name] 
+            chmod u+rw,go-r [file_name]
+        Mehtod 2: Octal mode
+            chmod 674 [file_name]
+                -> 4	Read Permission
+                -> 2	Write Permission
+                -> 1	Execute Permission

@@ -1,0 +1,39 @@
+Q. Shell Programs
+
+// Odd and Even Programs
+#!/bin/bash
+echo "Enter a number"
+read n
+r=`expr $n % 2 `
+if [ $r -eq 0 ]
+then 
+echo "$n is Even number"
+else 
+echo "$n is Odd number"
+fi
+
+// fibonacci
+#!/bin/bash
+echo "Enter a number"
+read N
+a=0
+b=1
+for((i=0;i<$N;i++))
+do 
+    echo -n "$a "
+    fn=`expr $a + $b`
+    a=$b
+    b=$fn
+done
+
+// factorial
+#!/bin/bash
+echo "Enter a number"
+read N
+fact=1
+for((i=1;i<=$N;i++))
+do 
+    fact=`expr $fact \* $i`
+done
+echo "Factorial of $N is : $fact"
+    
